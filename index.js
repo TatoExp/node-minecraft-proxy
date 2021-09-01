@@ -13,7 +13,7 @@ let localServerOptions = {
 	  host: 'mc.hypixel.net',
 	  port: 25565,
 	  isDefault: true,
-	  isFallback: true
+	  isFallback: false,
 	}
   }
   
