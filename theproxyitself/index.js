@@ -1,5 +1,4 @@
-const Proxy = require('./src/Proxy.js')
-const createProxy = require('./src/createProxy.js')
+const McProxy = require('../');
 
 let localServerOptions = {
 	'port': '25565',
@@ -25,7 +24,7 @@ let localServerOptions = {
 	<serverName> is the name that you chose for the server inside the serverList
 	This command is implemented by /src/Plugins/ChatCommands.js and it can be disabled by setting enablePlugin: false inside proxyOptions
   */
-  let proxy = createProxy(localServerOptions, serverList, proxyOptions);
+  let proxy = McProxy.createProxy(localServerOptions, serverList, proxyOptions);
   
   proxy.on('error', console.error);
   

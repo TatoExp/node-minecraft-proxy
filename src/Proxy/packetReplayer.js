@@ -24,6 +24,7 @@ function replayer (remoteClient, localClient, callback) {
 
     while (packets.size > 0) {
       let element = packets.deq()
+      console.log(element.metadata.name);
       remoteClient.write(element.metadata.name, element.packet)
     }
 
